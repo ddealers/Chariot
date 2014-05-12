@@ -1,0 +1,134 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: url(assets/ciudad.jpg) repeat;
+	background-size: cover;
+	width: auto;
+}
+.centrar{
+	width: 960px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 54px 5px #000;
+}
+section.head{
+	display: block;
+	width: 100%;
+	height: 98px;
+	background: #000000;
+	position: relative;
+} 
+section.head img#logo{
+	position: absolute;
+	top: 23px;
+	left: 154px;
+}
+section.head nav{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #ffffff;
+	background: url(assets/pleca.png) no-repeat top right;
+	height: 58px;
+	width: 295px;
+
+}
+section.head nav ul{
+	list-style-type: none;
+	position: absolute;
+	top: 25px;
+	left: 18px;
+	width: 280px;
+}
+section.head nav ul li{
+	display: inline-block;
+	font-family: "Advent Pro";
+	font-size: 12px;
+	padding: 7px 21px; 
+}
+
+section.encabezado{
+	height: 190px;
+	width: 960px;
+	position: relative;
+	background: #EC5967;
+}
+section.encabezado div.info{
+	background: url(assets/cuadro.png)no-repeat;
+	width: 579px;
+	height: 189px;
+	position: absolute;
+	z-index: 2;/*  z-index son mis layers en css  */
+}
+section.encabezado div.imagen{
+	overflow: hidden;
+	width: 506px; 
+	height: 175px;
+	top: -1px;
+	position: relative;
+	background: url(assets/jetta.png)no-repeat;
+	margin-left: 455px;
+	z-index: 1;
+}
+section.encabezado div h1{
+	height: 28px;
+	font-family: "Advent Pro";
+	font-weight: 100;
+	font-size: 42px;
+	color: #ffffff;
+	position: absolute;
+	left: 95px;
+	top: 16px;
+
+}
+section.encabezado div h4{
+	height: 17px;
+	font-family: "Advent Pro";
+	font-weight: 100;
+	font-size: 24px;
+	color: #ffffff;
+	position: absolute;
+	top: 108px;
+	left: 25px;
+}
+section.encabezado div h4 span{
+	font-size: 36px;
+	padding-left: 30px;
+}
+
+
+section.cuerpo {
+	position: relative;
+	width: 960px;
+	height: 804px;
+	color: #000000;
+	background: url(assets/fondo.jpg);
+}
+section.cuerpo ul{
+	list-style-type: none;
+	position: absolute;
+	top: 85px;
+	left: 37px;
+}
+section.cuerpo ul li{
+	display: inline-block;
+	font-size: 22px;
+	font-family: "Advent Pro";
+	font-weight: 100;
+	color: #ffffff;
+	background-color: #C5E8EF;
+	border-radius: 0px 0px 15px 15px;
+	width: 278px;
+	height: 316px;
+	margin-right: 22px;
+	padding-top: 14px;
+}
+section.cuerpo ul li span{
+	background-color: #76CDD4;
+	border-radius: 0px 0px 15px 15px;
+	padding: 14px 16px;
+	width: 162px;
+	height: 51px;
+	margin-left: 58px;
+}
