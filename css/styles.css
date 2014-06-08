@@ -2,19 +2,28 @@
 	margin: 0px;
 	padding: 0px;
 }
+html{
+    height: 100%;
+}
 body{
-	background: url(assets/ciudad.jpg) repeat;
+	background: url(../assets/ciudad.jpg) repeat;
 	background-size: cover;
 	width: auto;
+    height: 100%;
 }
 .centrar{
 	width: 960px;
 	margin: 0 auto;
 	box-shadow: 0px 0px 54px 5px #000;
+    height: 100%;
+}
+a{
+    color: #fff;
+    text-decoration: none;
 }
 nav.menu{
     color: #FFF;
-    background: url('assets/pleca.png') no-repeat scroll right top transparent;
+    background: url(../assets/pleca.png) no-repeat scroll right top transparent;
     height: 58px;
     width: 295px;
     z-index: 1;
@@ -33,9 +42,10 @@ nav.menu ul li{
 	font-family: "Advent Pro";
 	font-size: 12px;
 	padding: 7px 21px; 
+    font-weight: 
 }
 section.home{
-	background: url(assets/fondo_fusion1.png);
+	background: url(../assets/fondo_fusion1.png);
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100%;
@@ -74,7 +84,7 @@ section a.boton1{
 	margin-left: 116px;
 }
 section.servicios {
-    background: url('assets/2_jetta.jpg') no-repeat scroll 0% 0% transparent;
+    background: url(../assets/2_jetta.jpg) no-repeat scroll 0% 0% transparent;
     width: 100%;
     height: 583px;
     position: relative;
@@ -125,23 +135,21 @@ ul.imagenes li a{
     position: relative
 }
 ul.imagenes li span{
-    width: 119px;
-    height: 12px;
+    width: 162px;
+    height: 33px;
     display: inline-block;
     position: absolute;
-    padding: 20px 24;
     margin-bottom: 14px;
     bottom: 0;
     z-index: 1;
-    left: 24px;
+    left: 25px;
     background: #000000;
     opacity: 0.7;
     border-right: 4px #6DC9C4 solid;
-    
+    padding-top: 26px;
 }
 footer{
     width: 960px;
-    height: 123px;
     overflow: hidden;
     background: #ffffff;
     text-align: center;
@@ -149,7 +157,7 @@ footer{
 footer ul{
     width: 432px;
     height: 125px;
-    background: #C52026 url(assets/face_twi.png) no-repeat center left;
+    background: #C52026 url(../assets/face_twi.png) no-repeat center left;
     display: block;
     float: left;
 }
@@ -159,17 +167,17 @@ footer span{
 footer ul li{
     position: relative;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: #ffffff;
-    font-weight: 100;
-    padding: 31px 0px 0px 208;  
+    font-weight: 100; 
     letter-spacing: 1px; 
-    width: 141px;
+    width: 142px;
     list-style: none;
+    margin: 34px 0px 0px 200px;
 }
 footer cite{
-    background:#d84456 url(assets/pleca_pico.png) no-repeat top left;
-    padding-bottom: 66px;
+    background:#d84456 url(../assets/pleca_pico.png) no-repeat top left;
+    padding-bottom: 22px;
     display: block;
     width: 419px;
     float: left;
@@ -193,10 +201,11 @@ footer div {
 }
 footer p{
 	border-top: 3px #C52026 solid;
-	padding-top: 9px;
-	width: 375px;
-	margin-left: 250px;
+	width: 385px;
 	font-size: 11px;
+    padding: 9px 0px 9px 0px;
+    font-family: "Alegreya Sans SC";
+    margin: 0 auto;
 }
 }
 section.head{
@@ -216,7 +225,7 @@ section.head nav{
     right: 0;
     top: 0;
     color: #ffffff;
-    background: url(assets/pleca.png) no-repeat top right;
+    background: url(../assets/pleca.png) no-repeat top right;
     height: 58px;
     width: 295px;
 
@@ -235,30 +244,30 @@ section.head nav ul li{
     padding: 7px 21px; 
 }
 
-section.encabezado{
+section.encabezado-1{
     height: 190px;
     width: 960px;
     position: relative;
     background: #EC5967;
 }
-section.encabezado div.info{
-    background: url(assets/cuadro.png)no-repeat;
+section.encabezado-1 div.info{
+    background: url(../assets/cuadro.png)no-repeat;
     width: 579px;
     height: 189px;
     position: absolute;
     z-index: 2;/*  z-index son mis layers en css  */
 }
-section.encabezado div.imagen{
+section.encabezado-1 div.imagen{
     overflow: hidden;
     width: 506px; 
     height: 175px;
     top: -1px;
     position: relative;
-    background: url(assets/jetta.png)no-repeat;
+    background: url(../assets/jetta.png)no-repeat;
     margin-left: 455px;
     z-index: 1;
 }
-section.encabezado div h1{
+section.encabezado-1 div h1{
     height: 28px;
     font-family: "Advent Pro";
     font-weight: 100;
@@ -269,7 +278,7 @@ section.encabezado div h1{
     top: 16px;
 
 }
-section.encabezado div h4{
+section.encabezado-1 div h4{
     height: 17px;
     font-family: "Advent Pro";
     font-weight: 100;
@@ -279,7 +288,7 @@ section.encabezado div h4{
     top: 108px;
     left: 25px;
 }
-section.encabezado div h4 span{
+section.encabezado-1 div h4 span{
     font-size: 36px;
     padding-left: 30px;
 }
@@ -290,7 +299,7 @@ section.cuerpo {
     width: 960px;
     height: 804px;
     color: #000000;
-    background: url(assets/fondo.jpg);
+    background: url(../assets/fondo.jpg);
 }
 section.cuerpo ul{
     list-style-type: none;
@@ -336,7 +345,7 @@ section.head nav{
     right: 0;
     top: 0;
     color: #ffffff;
-    background: url(assets/pleca.png) no-repeat top right;
+    background: url(../assets/pleca.png) no-repeat top right;
     height: 58px;
     width: 295px;
 
@@ -361,7 +370,7 @@ section.encabezado{
     background: #EC5967;
 }
 section.encabezado div.info{
-    background: url(assets/cuadro.png);
+    background: url(../assets/cuadro.png);
     width: 579px;
     height: 174px;
     position: absolute;
@@ -374,7 +383,7 @@ section.encabezado div.imagen{
     top: -1px;
     right: 0;
     position: relative;
-    background: url(assets/jetta.png);
+    background: url(../assets/jetta.png);
     margin-left: 455px;
     z-index: 1;
 }
@@ -405,13 +414,13 @@ section.encabezado div h4 span{
     padding-left: 30px;
 }
 section.auto{
-    background: url(assets/img_jetta.png) no-repeat top left;
+    background: url(../assets/img_jetta.png) no-repeat top left;
     background-color: #fff;
     width: 470px;
     height: 309px;
 }
 section.auto div{
-    background: url(assets/header.jpg) top right;   
+    background: url(../assets/header.jpg) top right;   
     width: 491px;
     height: 300px;
     margin-left: 469px;
@@ -453,7 +462,7 @@ section a.boton{
     color: #FFFFFF;
     font-size: 14px;
     font-family: "Alegreya Sans SC";
-    font-weight: bold;
+    font-weight: ;
     padding:10px 50px; 
     width:300px;
     border-radius:10px; 
@@ -507,7 +516,7 @@ section.head nav{
     right: 0;
     top: 0;
     color: #ffffff;
-    background: url(assets/pleca.png) no-repeat top right;
+    background: url(../assets/pleca.png) no-repeat top right;
     height: 58px;
     width: 295px;
 
@@ -532,7 +541,7 @@ section.encabezado{
     background: #EC5967;
 }
 section.encabezado div.info {
-    background: url(assets/cuadro.png);
+    background: url(../assets/cuadro.png);
     width: 579px;
     height: 174px;
     position: absolute;
@@ -541,18 +550,16 @@ section.encabezado div.info {
 section.encabezado div.info img{
     height: 200px;
 }
-section.encabezado div.imagen{
-    overflow: hidden;
-    width: 422px;
-    height: 143px;
+section.encabezado-1 div.imagen{
+    overflow: hidden;s
     top: 0;
     right: 0;
     position: relative;
-    background: url(assets/contacto.png);
-    margin-left: 394px;
+    background: url(../assets/jetta.png);
+    height: 174px;
 }
 section.encabezado div h1{
-    width: 280px;
+    width: 288px;
     height: 28px;
     font-family: "Advent Pro";
     font-weight: 100;
@@ -572,6 +579,7 @@ section.encabezado div h4{
     position: absolute;
     top: 116px;
     left: 25px;
+    width:248px;
 }
 section.encabezado div h4 span{
     font-size: 36px;
@@ -580,6 +588,7 @@ section.encabezado div h4 span{
 section.encabezado .contacto img{
     margin-left: 458px;
     height: 174px;
+    background: url(../assets/contacto.png);
 }
 section.direccion{
     background-color: #9F9B9C;
