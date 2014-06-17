@@ -11,7 +11,12 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
+Route::get('/', function(){
+	return View::make('index');
+});
+Route::get('/categoria', function(){
+	return View::make('categorias');
+});
+Route::get('/detalle', function(){
+	return View::make('ficha_tecnica.php');
 });
