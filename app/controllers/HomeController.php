@@ -22,6 +22,9 @@ class HomeController extends BaseController {
 	public function categorias(){
 		$this->layout->content = View::make('categorias');
 	}
+	public function ofertas(){
+		$this->layout->content = View::make('categorias');
+	}
 	public function detalle(){
 		$this->layout->content = View::make('ficha_tecnica');
 	}

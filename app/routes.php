@@ -13,5 +13,6 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/categoria', 'HomeController@categorias');
+Route::get('/ofertas', 'HomeController@ofertas');
 Route::get('/detalle', 'HomeController@detalle');
 Route::get('/contacto', 'HomeController@contacto');
