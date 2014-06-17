@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function(){
-	return View::make('index');
-});
+Route::get('/', 'HomeController@index');
 Route::get('/categoria', function(){
 	return View::make('categorias');
 });
