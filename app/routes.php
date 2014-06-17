@@ -20,3 +20,6 @@ Route::get('/categoria', function(){
 Route::get('/detalle', function(){
 	return View::make('ficha_tecnica.php');
 });
+Route::get('/contacto', function(){
+	return View::make('contacto');
+});
