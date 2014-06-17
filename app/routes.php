@@ -12,12 +12,6 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('/categoria', function(){
-	return View::make('categorias');
-});
-Route::get('/detalle', function(){
-	return View::make('ficha_tecnica');
-});
-Route::get('/contacto', function(){
-	return View::make('contacto');
-});
+Route::get('/categoria', 'HomeController@categorias');
+Route::get('/detalle', 'HomeController@detalle');
+Route::get('/contacto', 'HomeController@contacto');
