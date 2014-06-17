@@ -19,5 +19,13 @@ class HomeController extends BaseController {
 	public function index(){
 		$this->layout->content = View::make('index');
 	}
-
+	public function categorias(){
+		$this->layout->content = View::make('categorias');
+	}
+	public function detalle(){
+		$this->layout->content = View::make('ficha_tecnica');
+	}
+	public function contacto(){
+		$this->layout->content = View::make('contacto');
+	}
 }
