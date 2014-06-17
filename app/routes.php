@@ -18,7 +18,7 @@ Route::get('/categoria', function(){
 	return View::make('categorias');
 });
 Route::get('/detalle', function(){
-	return View::make('ficha_tecnica.php');
+	return View::make('ficha_tecnica');
 });
 Route::get('/contacto', function(){
 	return View::make('contacto');
