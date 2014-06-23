@@ -24,8 +24,8 @@
 			@section('redes')
     			<span>
 		    		<ul>
-		    			<li>chariot rent-a-car</li>
-		    			<li>@chariot rent-a-car</li>
+		    			<li> <a href="https://www.facebook.com/chariotmx">chariotmx</a></li>
+		    			<li> <a href="@Chariotmx">@Chariotmx</a></li>
 		    			</ul>
             	</span>
             	<cite><div>CUENTANOS TU EXPERENCIA A TRAVÉS DE LAS REDES SOCIALES.</div></cite>
