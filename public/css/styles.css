@@ -587,9 +587,9 @@ section.encabezado div h4 span{
     padding-left: 30px;
 }
 section.encabezado .contacto img{
-    margin-left: 458px;
-    height: 174px;
-    background: url(../assets/contacto.png);
+    margin-left: 461px;
+    height: 173px;
+    padding: 0px;
 }
 section.direccion{
     background-color: #9F9B9C;
