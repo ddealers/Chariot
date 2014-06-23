@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('menu')
-<a href="index.html"><img src="./assets/logo_chariot.png"></a>
+<a href="./"><img src="./assets/logo_chariot.png"></a>
 @parent
 @stop
 @section('content')
