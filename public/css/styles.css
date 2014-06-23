@@ -27,13 +27,13 @@ nav.menu{
     height: 111px;
     width: 100%;
     z-index: 1;
-    zposition: relative;
+    position: relative;
 }
 nav.menu ul{
 	list-style-type: none;
 	position: absolute;
 	top: 25px;
-	left: 18px;
+	left: 838px;
 	width: 280px;
 }
 nav.menu ul li{

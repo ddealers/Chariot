@@ -1,4 +1,8 @@
 @extends('layouts.master')
+@section('menu')
+<img src="./assets/logo_chariot.png">
+@parent
+@stop
 @section('content')
 <section class="encabezado-1">
 	<div class="info">

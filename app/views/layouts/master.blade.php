@@ -9,12 +9,15 @@
 	</head>
 	<body>
 		<div class="centrar">
+			
 			<nav class="menu">
+				@section('menu')
 				<ul>
 					<li> <a href="./#servicios">SERVICIOS</a></li>
 					<li> <a href="./ofertas">OFERTAS</a></li>
 					<li> <a href="./contacto">CONTACTO</a></li>
 				</ul>
+				@show
 			</nav>
 			@yield('content')
 			<footer>
