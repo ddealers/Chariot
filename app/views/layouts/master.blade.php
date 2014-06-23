@@ -10,7 +10,7 @@
 	<body>
 		<div class="centrar">
 			
-			<nav class="menu">
+			<nav class="menu home">
 				@section('menu')
 				<ul>
 					<li> <a href="./#servicios">SERVICIOS</a></li>

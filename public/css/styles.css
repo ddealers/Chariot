@@ -42,6 +42,12 @@ nav.menu ul li{
     font-size: 12px;
     padding: 7px 21px;
 }
+nav.home{
+     background: url(../assets/pleca.png) no-repeat scroll right;
+     position: absolute;
+     height: 70px;
+     width: 76%;
+}
 img{
     padding: 32px;
 }
