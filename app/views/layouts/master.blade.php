@@ -21,6 +21,7 @@
 			</nav>
 			@yield('content')
 			<footer>
+			@section('redes')
     			<span>
 		    		<ul>
 		    			<li>chariot rent-a-car</li>
@@ -28,6 +29,7 @@
 		    			</ul>
             	</span>
             	<cite><div>CUENTANOS TU EXPERENCIA A TRAVÉS DE LAS REDES SOCIALES.</div></cite>
+            @show
             	<div><p>Chariot rent-a-car / Todos los derechos reservados 2014 / Políticas de privacidad.</p></div>
             </footer>
 			</div>
