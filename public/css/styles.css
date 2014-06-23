@@ -23,12 +23,11 @@ a{
 }
 nav.menu{
     color: #FFF;
-    background: url(../assets/pleca.png) no-repeat scroll right top transparent;
-    height: 58px;
-    width: 295px;
+    background: url(../assets/pleca.png) no-repeat scroll right top #000;
+    height: 111px;
+    width: 100%;
     z-index: 1;
-    position: relative;
-    float: right;
+    zposition: relative;
 }
 nav.menu ul{
 	list-style-type: none;
@@ -38,11 +37,13 @@ nav.menu ul{
 	width: 280px;
 }
 nav.menu ul li{
-	display: inline-block;
-	font-family: "Advent Pro";
-	font-size: 12px;
-	padding: 7px 21px; 
-    font-weight: 
+    display: inline-block;
+    font-family: "Advent Pro";
+    font-size: 12px;
+    padding: 7px 21px;
+}
+img{
+    padding: 32px;
 }
 section.home{
 	background: url(../assets/fondo_fusion1.png);
