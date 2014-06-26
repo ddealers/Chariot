@@ -23,9 +23,6 @@ a{
 nav.menu{
     background: url(../assets/pleca.png) no-repeat scroll right top #000;
     height: 111px;
-    width: 100%;
-    z-index: 1;
-    position: relative;
 }
 nav.menu ul{
 	position: absolute;
@@ -524,17 +521,14 @@ section.encabezado .contacto img{
 }
 section.direccion{
     background-color: #9F9B9C;
-    width: 960px;
     height: 312px;
 }
 section.direccion img{
     margin-left: 455px;
-    margin-top: 12px;
 }
 section.direccion p{
     width: 311px;
     height: 0px;
-    font-weight: 100;
     font-family: "Advent Pro";
     font-size: 21px;
     line-height: 57px;
@@ -543,14 +537,9 @@ section.direccion p{
     letter-spacing: 2px;
 }
 section.icon-contacto{
-    width: 960px;
     height: 179px;
     background-color: #CB2027;
     padding-top: 12px;
-}
-section.icon-contacto ul{
-    width: 960px;
-    height: 59px;
 }
 section.icon-contacto li {
     display: inline-block;
@@ -618,7 +607,6 @@ footer cite div {
     line-height: 40px;
 }
 footer div {
-    clear: both;
     padding-top: 19px;
 }
 footer p{
