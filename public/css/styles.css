@@ -156,65 +156,6 @@ ul.imagenes li span{
     border-right: 4px #6DC9C4 solid;
     padding-top: 26px;
 }
-footer{
-    width: 960px;
-    overflow: hidden;
-    background: #ffffff;
-    text-align: center;
-}
-footer ul{
-    width: 432px;
-    height: 125px;
-    background: #C52026 url(../assets/face_twi.png) no-repeat center left;
-    display: block;
-    float: left;
-}
-footer span{
-    margin-top: 30px;
-}
-footer ul li{
-    position: relative;
-    font-family: sans-serif;
-    font-size: 14px;
-    color: #ffffff;
-    font-weight: 100; 
-    letter-spacing: 1px; 
-    list-style: none;
-    margin: 34px 0px 0px 200px;
-}
-footer cite{
-    background:#d84456 url(../assets/pleca_pico.png) no-repeat top left;
-    padding-bottom: 22px;
-    display: block;
-    width: 419px;
-    float: left;
-    padding-left: 109px;
-}
-footer cite div {
-    font-family: "advent pro";
-    font-size: 21px;
-    font-weight: 100;
-    color: #ffffff;
-    letter-spacing: 1px; 
-    font-style: normal;
-    width: 351px;
-    padding-top: 23px;
-    margin-left: 20px;
-    line-height: 40px;
-}
-footer div {
-    clear: both;
-    padding-top: 19px;
-}
-footer p{
-    border-top: 3px #C52026 solid;
-    width: 385px;
-    font-size: 11px;
-    padding: 9px 0px 9px 0px;
-    font-family: "Alegreya Sans SC";
-    margin: 0 auto;
-}
-}
 section.head{
     display: block;
     width: 100%;
@@ -654,6 +595,64 @@ section.icon-contacto span{
     height: 15px;
     background: #EC5967;
 }
-footer .colo{
+footer{
+    width: 960px;
+    overflow: hidden;
+    background: #ffffff;
+    text-align: center;
+}
+footer ul{
+    width: 432px;
+    height: 125px;
+    background: #C52026 url(../assets/face_twi.png) no-repeat center left;
+    display: block;
+    float: left;
+}
+footer span{
+    margin-top: 30px;
+}
+footer ul li{
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 100; 
+    letter-spacing: 1px; 
+    list-style: none;
+    margin: 34px 0px 0px 200px;
+}
+footer cite{
+    background:#d84456 url(../assets/pleca_pico.png) no-repeat top left;
+    padding-bottom: 22px;
+    display: block;
+    width: 419px;
+    float: left;
+    padding-left: 109px;
+}
+footer cite div {
+    font-family: "advent pro";
+    font-size: 21px;
+    font-weight: 100;
+    color: #ffffff;
+    letter-spacing: 1px; 
+    font-style: normal;
+    width: 351px;
+    padding-top: 23px;
+    margin-left: 20px;
+    line-height: 40px;
+}
+footer div {
+    clear: both;
+    padding-top: 19px;
+}
+footer p{
+    border-top: 3px #C52026 solid;
+    width: 385px;
+    font-size: 11px;
+    padding: 9px 0px 9px 0px;
+    font-family: "Alegreya Sans SC";
+    margin: 0 auto;
+}
+footer .color{
     background: #000;
 }
