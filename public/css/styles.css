@@ -21,12 +21,8 @@ a{
     text-decoration: none;
 }
 nav.menu{
-    color: #FFF;
     background: url(../assets/pleca.png) no-repeat scroll right top #000;
     height: 111px;
-    width: 100%;
-    z-index: 1;
-    position: relative;
 }
 nav.menu ul{
 	position: absolute;
