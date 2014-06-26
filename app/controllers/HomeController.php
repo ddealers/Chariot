@@ -20,7 +20,8 @@ class HomeController extends BaseController {
 		$this->layout->content = View::make('index');
 	}
 	public function categorias(){
-		$this->layout->content = View::make('categorias');
+		$categories = Category::all();
+		$this->layout->content = View::make('categorias', array('categories' => $categories));
 	}
 	public function ofertas(){
 		$this->layout->content = View::make('categorias');
