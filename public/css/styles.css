@@ -463,13 +463,6 @@ section.head nav ul li{
     font-size: 12px;
     padding: 7px 21px; 
 }
-section.encabezado div.info {
-    background: url(../assets/cuadro.png);
-    width: 579px;
-    height: 174px;
-    position: absolute;
-    z-index: 2;/*  z-index son mis layers en css  */
-}
 section.encabezado div.info img{
     height: 200px;
 }
