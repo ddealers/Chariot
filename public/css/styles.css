@@ -537,14 +537,9 @@ section.direccion p{
     letter-spacing: 2px;
 }
 section.icon-contacto{
-    width: 960px;
     height: 179px;
     background-color: #CB2027;
     padding-top: 12px;
-}
-section.icon-contacto ul{
-    width: 960px;
-    height: 59px;
 }
 section.icon-contacto li {
     display: inline-block;
