@@ -15,7 +15,6 @@ class HomeController extends BaseController {
 	|
 	*/
 	protected $layout = 'layouts.master';
-	private $category = new Category();
 	
 	public function index(){
 		$this->layout->content = View::make('index');
