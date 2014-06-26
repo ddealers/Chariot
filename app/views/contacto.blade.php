@@ -21,8 +21,8 @@
 	<ul>
 		<li><div id="borde-blanco"><img src="{{ asset('/assets/whats.png') }}">Whatsapp<span>(0155) 65806950</span></div></li>
 		<li><div id="borde-blanco"><a href="https://www.facebook.com/chariotmx?fref=ts"><img src="{{ asset('/assets/facebook.png') }}">Facebook<span>www.facebook.com/chariotmx</span></a></div></li>
-		<li><div id="borde-blanco"><img src="{{ asset('/assets/celular.png') }}">Celular<span>(0155) 65806950     ID 42*15*552128</span></div></li>
-		<li><div id="borde-blanco"><img src="{{ asset('/assets/mercado-libre.png') }}">Mercado Libre<span>55-3197-4069</span></div></li>
+		<li><div id="borde-blanco"><a href="tel:65806950"><img src="{{ asset('/assets/celular.png') }}">Celular<span>(0155) 65806950     ID 42*15*552128</span></a></div></li>
+		<li><div id="borde-blanco"><img src="{{ asset('/assets/mercado-libre.png') }}">Correo<span>cotizaciones@chariot.mx</span></div></li>
 	</ul>
 </section>
 @stop
