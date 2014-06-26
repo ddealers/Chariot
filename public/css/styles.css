@@ -31,11 +31,11 @@ nav.menu{
     position: relative;
 }
 nav.menu ul{
-    list-style-type: none;
-    position: absolute;
-    top: 25px;
-    left: 685px;
-    width: 280px;
+	list-style-type: none;
+	position: absolute;
+	top: 25px;
+	left: 685px;
+	width: 280px;
 }
 nav.menu ul li{
     display: inline-block;

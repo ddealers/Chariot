@@ -2,7 +2,7 @@
 @section('content')
 <section class="home">
 	<img src="../assets/logo_chariot.png">
-	<p>Somos una empresa responsable, que brinbda distintos servicios de manera que disfrutarás tu estancia, "Porque nos gusta que visites nuestra ciudad"</p>
+	<p>Somos una empresa responsable, que brinda distintos servicios de manera que disfrutarás tu estancia, "Porque nos gusta que visites nuestra ciudad"</p>
 	<a href="" class="boton1">RESERVA AHORA</a>
 </section>
 <section id="servicios" class="servicios"> 
