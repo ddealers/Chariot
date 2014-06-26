@@ -21,7 +21,7 @@
 	<ul>
 		<li><div id="borde-blanco"><a href="tel:65806950"><img src="{{ asset('/assets/whats.png') }}">Whatsapp<span>(0155) 65806950</span></a></div></li>
 		<li><div id="borde-blanco"><a href="https://www.facebook.com/chariotmx"><img src="{{ asset('/assets/facebook.png') }}">Facebook<span>www.facebook.com/chariotmx</span></a></div></li>
-		<li><div id="borde-blanco"><a href="tel:65806950"><img src="{{ asset('/assets/celular.png') }}">Celular<span>(0155) 65806950     ID 42*15*552128</span></a></div></li>
+		<li><div id="borde-blanco"><img src="{{ asset('/assets/celular.png') }}">Celular<span>(0155) 65806950     ID 42*15*552128</span></div></li>
 		<li><div id="borde-blanco"><a href="mailto:cotizaciones@chariot.mx"><img src="{{ asset('/assets/correo.png') }}">Correo<span>cotizaciones@chariot.mx</span></a></div></li>
 	</ul>
 </section>
