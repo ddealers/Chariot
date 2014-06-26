@@ -16,8 +16,8 @@
 <section class="cuerpo">
 	<ul>
 		<li> <a href="{{ action('HomeController@detalle') }}"> <span>AUTOS CLASE A</span> </a><img src=""></li>
-		<li> <a href="#"> <span>AUTOS CLASE B</span> </a><!--<img src="">--></li>
-		<li> <a href="#"> <span>AUTOS CLASE C</span> </a><!--<img src="">--></li>
+		<li> <a href="{{ action('HomeController@detalle') }}"> <span>AUTOS CLASE B</span> </a><img src=""></li>
+		<li> <a href="{{ action('HomeController@detalle') }}"> <span>AUTOS CLASE C</span> </a><img src=""></li>
 	</ul>
 </section>
 @stop
