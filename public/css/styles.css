@@ -103,11 +103,7 @@ section.servicios h1{
     letter-spacing: 7px;  
 }
 section.servicios h1 span{
-    position: relative;
-    width: 5px;
-    height: 84px;
     border-right: 4px #6DC9C4 solid;
-    margin-top: 5px;
     padding-bottom: 33px;
 }
 ul.imagenes{
