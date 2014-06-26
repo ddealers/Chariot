@@ -54,7 +54,7 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
+			'host'      => 'mysql.chariot.mx',
 			'database'  => 'chariotdb',
 			'username'  => 'charadm',
 			'password'  => 'Th3Ch4rdB',
