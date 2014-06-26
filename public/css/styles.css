@@ -463,12 +463,6 @@ section.head nav ul li{
     font-size: 12px;
     padding: 7px 21px; 
 }
-section.encabezado{
-    height: 191px;
-    width: 960px;
-    position: relative;
-    background: #EC5967;
-}
 section.encabezado div.info {
     background: url(../assets/cuadro.png);
     width: 579px;
