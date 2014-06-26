@@ -3,7 +3,7 @@
 	<head>
 		<title>Chariot rent-a-car</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
 		<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,500' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500' rel='stylesheet' type='text/css'>
 	</head>
