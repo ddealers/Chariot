@@ -8,8 +8,6 @@ html{
 body{
     background: url(../assets/ciudad.jpg) repeat;
     background-size: cover;
-    width: auto;
-    height: 100%;
 }
 .centrar{
     width: 960px;
