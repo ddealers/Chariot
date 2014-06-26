@@ -1,21 +1,22 @@
 *{
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 html{
     height: 100%;
 }
 body{
-	background: url(../assets/ciudad.jpg) repeat;
-	background-size: cover;
-	width: auto;
+    background: url(../assets/ciudad.jpg) repeat;
+    background-size: cover;
+    width: auto;
     height: 100%;
 }
 .centrar{
-	width: 960px;
-	margin: 0 auto;
-	box-shadow: 0px 0px 54px 5px #000;
+    width: 960px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 54px 5px #000;
     height: 100%;
+    position: relative;
 }
 a{
     color: #fff;
@@ -23,65 +24,72 @@ a{
 }
 nav.menu{
     color: #FFF;
-    background: url(../assets/pleca.png) no-repeat scroll right top transparent;
-    height: 58px;
-    width: 295px;
+    background: url(../assets/pleca.png) no-repeat scroll right top #000;
+    height: 111px;
+    width: 100%;
     z-index: 1;
     position: relative;
-    float: right;
 }
 nav.menu ul{
-	list-style-type: none;
-	position: absolute;
-	top: 25px;
-	left: 18px;
-	width: 280px;
+    list-style-type: none;
+    position: absolute;
+    top: 25px;
+    left: 685px;
+    width: 280px;
 }
 nav.menu ul li{
-	display: inline-block;
-	font-family: "Advent Pro";
-	font-size: 12px;
-	padding: 7px 21px; 
-    font-weight: 
+    display: inline-block;
+    font-family: "Advent Pro";
+    font-size: 12px;
+    padding: 7px 21px;
+}
+nav.home{
+     background: url(../assets/pleca.png) no-repeat scroll right;
+     position: absolute;
+     height: 70px;
+     width: 100%;
+}
+img{
+    padding: 32px;
 }
 section.home{
-	background: url(../assets/fondo_fusion1.png);
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
-	position: relative;
-	background-size: cover;
+    background: url(../assets/fondo_fusion1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
 }
 section.home img{
-	position: absolute;
-	left: 154px;
-	top: 76px;
+    position: absolute;
+    left: 154px;
+    top: 76px;
 } 
 section.home p{
-	width: 361px;
-	height: 72px;
-	padding: 179px 50px 52px;
-	padding-bottom: 52px;
-	font-size: 16px;
-	font-family: "advent pro";
-	color: #000;
-	line-height: 30px;
-	font-weight: 100;
+    width: 361px;
+    height: 72px;
+    padding: 179px 50px 52px;
+    padding-bottom: 52px;
+    font-size: 16px;
+    font-family: "advent pro";
+    color: #000;
+    line-height: 30px;
+    font-weight: 100;
 }
 section a.boton1{
-	color: #FFFFFF;
-	font-size: 14px;
-	font-family: "Alegreya Sans SC";
-	font-weight: bold;
-	border:2px solid #8A0829;
-	padding:10px 50px; 
-	width:300px;
-	border-radius:10px; 
-	background-image: -moz-linear-gradient(#8A0829, #FF0040);
-	background-image: -webkit-linear-gradient(#8A0829, #FF0040);
-	background-image: -o-linear-gradient(#8A0829, #FF0040);
-	text-decoration: none;
-	margin-left: 116px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: "Alegreya Sans SC";
+    font-weight: bold;
+    border:2px solid #8A0829;
+    padding:10px 50px; 
+    width:300px;
+    border-radius:10px; 
+    background-image: -moz-linear-gradient(#8A0829, #FF0040);
+    background-image: -webkit-linear-gradient(#8A0829, #FF0040);
+    background-image: -o-linear-gradient(#8A0829, #FF0040);
+    text-decoration: none;
+    margin-left: 116px;
 }
 section.servicios {
     background: url(../assets/2_jetta.jpg) no-repeat scroll 0% 0% transparent;
@@ -91,12 +99,12 @@ section.servicios {
     overflow: hidden;
 }
 section.servicios h1{
-	color: #FFFFFF;
-	font-size: 43px;
-	font-family: "advent pro";
-	font-weight: 100;
-	margin-left: 30px;
-	text-shadow: -18px 35px #585858; 
+    color: #FFFFFF;
+    font-size: 43px;
+    font-family: "advent pro";
+    font-weight: 100;
+    margin-left: 30px;
+    text-shadow: -18px 35px #585858; 
     letter-spacing: 7px;  
 }
 section.servicios h1 span{
@@ -108,7 +116,7 @@ section.servicios h1 span{
     padding-bottom: 33px;
 }
 ul.imagenes{
-    background: #000000;
+    background: rgba(0,0,0,0.5);
     height: 207px;
     width: 960px;
     margin-top: 324px;
@@ -142,7 +150,7 @@ ul.imagenes li span{
     margin-bottom: 14px;
     bottom: 0;
     z-index: 1;
-    left: 25px;
+    left: 57px;
     background: #000000;
     opacity: 0.7;
     border-right: 4px #6DC9C4 solid;
@@ -162,7 +170,7 @@ footer ul{
     float: left;
 }
 footer span{
-	margin-top: 30px;
+    margin-top: 30px;
 }
 footer ul li{
     position: relative;
@@ -171,7 +179,6 @@ footer ul li{
     color: #ffffff;
     font-weight: 100; 
     letter-spacing: 1px; 
-    width: 142px;
     list-style: none;
     margin: 34px 0px 0px 200px;
 }
@@ -184,25 +191,25 @@ footer cite{
     padding-left: 109px;
 }
 footer cite div {
-	font-family: "advent pro";
-	font-size: 21px;
-	font-weight: 100;
-	color: #ffffff;
-	letter-spacing: 1px; 
-	font-style: normal;
-	width: 351px;
-	padding-top: 23px;
-	margin-left: 20px;
-	line-height: 40px;
+    font-family: "advent pro";
+    font-size: 21px;
+    font-weight: 100;
+    color: #ffffff;
+    letter-spacing: 1px; 
+    font-style: normal;
+    width: 351px;
+    padding-top: 23px;
+    margin-left: 20px;
+    line-height: 40px;
 }
 footer div {
-	clear: both;
-	padding-top: 19px;
+    clear: both;
+    padding-top: 19px;
 }
 footer p{
-	border-top: 3px #C52026 solid;
-	width: 385px;
-	font-size: 11px;
+    border-top: 3px #C52026 solid;
+    width: 385px;
+    font-size: 11px;
     padding: 9px 0px 9px 0px;
     font-family: "Alegreya Sans SC";
     margin: 0 auto;
@@ -586,14 +593,14 @@ section.encabezado div h4 span{
     padding-left: 30px;
 }
 section.encabezado .contacto img{
-    margin-left: 458px;
-    height: 174px;
-    background: url(../assets/contacto.png);
+    margin-left: 461px;
+    height: 173px;
+    padding: 0px;
 }
 section.direccion{
     background-color: #9F9B9C;
     width: 960px;
-    height: 270px;
+    height: 312px;
 }
 section.direccion img{
     margin-left: 455px;
@@ -614,6 +621,7 @@ section.icon-contacto{
     width: 960px;
     height: 179px;
     background-color: #CB2027;
+    padding-top: 12px;
 }
 section.icon-contacto ul{
     width: 960px;
@@ -624,13 +632,13 @@ section.icon-contacto li {
     font-family: "Advent Pro";
     font-size: 14px;
     color: #fff;
-    padding: 26px 0px 0px 95px;
+    padding: 12px 0px 3px 95px;
     width: 327px;
     letter-spacing: 1px;
 }
 section.icon-contacto li img{  
     float: left;
-    margin: -5px 2px 0px -21px;
+    margin: -38px 0px 0px -48px;
 }
 section.icon-contacto span{
     display: block;
@@ -639,7 +647,7 @@ section.icon-contacto span{
 }
 #borde-blanco{
     border: 1px #fff solid;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
 }
 .color{
     width: 960px;
