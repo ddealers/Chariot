@@ -118,7 +118,6 @@ ul.imagenes li{
 }
 ul.imagenes li img{
     height: 166px;
-    display: inline-block; 
     padding-top: 20px;
 }
 ul.imagenes li a{
