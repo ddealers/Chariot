@@ -9,8 +9,11 @@
 	</head>
 	<body>
 		<div class="centrar">
-			
+			@if( Route::getCurrentRoute()->getPath() === '/' )
 			<nav class="menu home">
+			@else
+			<nav class="menu">
+			@endif
 				@section('menu')
 				<ul>
 					<li> <a href="./#servicios">SERVICIOS</a></li>
