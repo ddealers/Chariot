@@ -593,9 +593,6 @@ footer ul{
     display: block;
     float: left;
 }
-footer span{
-    margin-top: 30px;
-}
 footer ul li{
     position: relative;
     font-family: sans-serif;
