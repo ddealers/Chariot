@@ -21,7 +21,8 @@ class HomeController extends BaseController {
 	}
 	public function categorias($cat = null){
 		if($cat){
-			$categories = Category::where('parent_cat','=',$cat);
+			$category = Category::where('name','=',$cat)->first();
+			$categories = Category::where('parent_id','=',$category->id);
 		}else{
 			$categories = Category::all();
 		}
