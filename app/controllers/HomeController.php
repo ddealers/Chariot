@@ -19,8 +19,12 @@ class HomeController extends BaseController {
 	public function index(){
 		$this->layout->content = View::make('index');
 	}
-	public function categorias(){
-		$categories = Category::all();
+	public function categorias($cat){
+		if($cat){
+			$categories = Category::where('parent_cat','=',$cat);
+		}else{
+			$categories = Category::all();
+		}
 		$this->layout->content = View::make('categorias', array('categories' => $categories));
 	}
 	public function ofertas(){
