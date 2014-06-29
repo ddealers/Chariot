@@ -19,7 +19,7 @@ class HomeController extends BaseController {
 	public function index(){
 		$this->layout->content = View::make('index');
 	}
-	public function categorias($cat){
+	public function categorias($cat = null){
 		if($cat){
 			$categories = Category::where('parent_cat','=',$cat);
 		}else{
