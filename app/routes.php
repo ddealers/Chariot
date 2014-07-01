@@ -16,3 +16,6 @@ Route::get('/categorias/{cat?}', 'HomeController@categorias');
 Route::get('/ofertas', 'HomeController@ofertas');
 Route::get('/detalle', 'HomeController@detalle');
 Route::get('/contacto', 'HomeController@contacto');
+Route::get('/gitupdate', function(){
+	echo 'Hola git';
+});
