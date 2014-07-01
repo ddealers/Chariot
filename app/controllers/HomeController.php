@@ -23,13 +23,14 @@ class HomeController extends BaseController {
 		if($cat){
 			$category = Category::where('name','=',$cat)->first();
 			$categories = Category::where('parent_id','=',$category->id);
+			var_dump($categories);
 		}else{
 			$categories = Category::all();
 		}
 		$this->layout->content = View::make('categorias', array('categories' => $categories));
 	}
 	public function ofertas(){
-		$this->layout->content = View::make('categorias');
+		$this->layout->content = View::make('categorias', , array('categories' => null));
 	}
 	public function detalle(){
 		$this->layout->content = View::make('ficha_tecnica');
