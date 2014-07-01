@@ -30,7 +30,7 @@ class HomeController extends BaseController {
 		$this->layout->content = View::make('categorias', array('categories' => $categories));
 	}
 	public function ofertas(){
-		$this->layout->content = View::make('categorias', , array('categories' => null));
+		$this->layout->content = View::make('categorias', array('categories' => null));
 	}
 	public function detalle(){
 		$this->layout->content = View::make('ficha_tecnica');
