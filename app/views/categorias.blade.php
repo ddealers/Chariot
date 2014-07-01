@@ -16,7 +16,7 @@
 <section class="cuerpo">
 	<ul>
 		@foreach ($categories as $category)
-			<li><a href="{{ action('HomeController@detalle') }}"> <span>{{ $category->name }}</span> </a><img src="{{ $category->img_path }}"></li>
+			<!--<li><a href="{{ action('HomeController@detalle') }}"> <span>{{ $category->name }}</span> </a><img src="{{ $category->img_path }}"></li>-->
 		@endforeach
 	</ul>
 </section>
