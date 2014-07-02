@@ -39,9 +39,9 @@ class HomeController extends BaseController {
 		$title = ($category) ? $category->name : 'Ofertas de Temporada';
 		$this->layout->content = View::make('categorias', array('title' => $title, 'items' => $items, 'categories' => $categories));
 	}
-	public function detalle(){
-		$item
-		$this->layout->content = View::make('ficha_tecnica');
+	public function detalle($id){
+		$item = Profile::find($id);
+		$this->layout->content = View::make('ficha_tecnica', array('item' => $item));
 	}
 	public function contacto(){
 		$this->layout->content = View::make('contacto');
