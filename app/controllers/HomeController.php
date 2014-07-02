@@ -29,8 +29,15 @@ class HomeController extends BaseController {
 			$items = NULL;
 			$categories = Category::all();
 		}
-		$title = ($category) ? $category->name : 'Categorías';
-		$this->layout->content = View::make('categorias', array('title' => $title, 'items' => $items, 'categories' => $categories));
+		if($category){
+			$title = $category->name;
+			$img = $category->img_path;
+		}else{
+			$title = 'Categorías';
+			$img = 'assets/2_jetta.jpg';
+		}
+		
+		$this->layout->content = View::make('categorias', array('title' => $title, 'img' => $img, 'items' => $items, 'categories' => $categories));
 	}
 	public function ofertas(){
 		$category = Category::where('slug', '=', 'ofertas')->first();

@@ -1,4 +1,8 @@
 @extends('layouts.master')
+@section('menu')
+<a href="{{ action('HomeController@index') }}"><img src="{{ asset('assets/logo_chariot.png') }}"></a>
+@parent
+@stop
 @section('content')
 <section class="encabezado">
 	<div class="info">
@@ -6,27 +10,31 @@
 		<h4>FICHA TÉCNICA</h4>
 	</div>	
 	<div class="imagen">
-		<img src=<"../assets/jetta.png">
+		<img src=<"{{$item->img_path}}">
 	</div>
 </section>
 <section class="auto">
 	<div>
 		<ul>
-			<li>NOMBRE:<span>JETTA GLI</span></li>
-			<li>PRECIO:<span>$1,000</span></li>
-			<li>CATEGORÍA:<span>CLASE A</span></li>	
+			<li>NOMBRE:<span>{{ $item->name }}</span></li>
+			<li>PRECIO:<span>{{ $item->price }}</span></li>
+			<li>CATEGORÍA:<span>{{ $item->cat_id }}</span></li>	
 		</ul>
 	</div>
 </section>
 <section class="icon">
-	<a  href="" class="boton">RESERVA AHORA</a>
+	<a  href="{{ action('HomeController@contacto') }}" class="boton">RESERVA AHORA</a>
 	<div class="texto">
 		<ul class="informes">
-			<li> <img src="../assets/compu.png">ESPECIFICACIONES</li>
-			<li><img src="../assets/servicio.png">SERVICIOS</li>
-			<li><img src="../assets/doc.png">DOCUMENTOS</li>
+			<li> <img src="{{ asset(assets/compu.png) }}">ESPECIFICACIONES</li>
+			<li><img src="{{ asset(assets/servicio.png) }}">SERVICIOS</li>
+			<li><img src="{{ asset(assets/doc.png) }}">DOCUMENTOS</li>
 		</ul>
 	</div>
-	<div class="contenedor"></div>
+	<div class="contenedor">
+		<article>{{ $item->especifications }}</article>
+		<article>{{ $item->services }}</article>
+		<article>{{ $item->documents }}</article>
+	</div>
 </section>
 @stop
