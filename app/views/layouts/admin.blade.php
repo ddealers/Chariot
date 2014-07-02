@@ -15,7 +15,7 @@
 				@if(Auth::check())
 				<a class="navbar-text navbar-right" href="{{ action('AdminController@logout') }}">Salir</a>
 				@endif
-				<img src="{{ asset('/assets/logo_chariot.png') }}">
+				<img src="{{ asset('assets/logo_chariot.png') }}">
 			</nav>
 			@yield('content')
 		</div>

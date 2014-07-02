@@ -26,9 +26,9 @@
 	<a  href="{{ action('HomeController@contacto') }}" class="boton">RESERVA AHORA</a>
 	<div class="texto">
 		<ul class="informes">
-			<li> <img src="{{ asset(assets/compu.png) }}">ESPECIFICACIONES</li>
-			<li><img src="{{ asset(assets/servicio.png) }}">SERVICIOS</li>
-			<li><img src="{{ asset(assets/doc.png) }}">DOCUMENTOS</li>
+			<li> <img src="{{ asset('assets/compu.png') }}">ESPECIFICACIONES</li>
+			<li><img src="{{ asset('assets/servicio.png') }}">SERVICIOS</li>
+			<li><img src="{{ asset('assets/doc.png') }}">DOCUMENTOS</li>
 		</ul>
 	</div>
 	<div class="contenedor">
