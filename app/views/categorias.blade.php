@@ -17,14 +17,14 @@
 	@if ($categories)
 		<ul>
 			@foreach ($categories as $category)
-				<li><a href="{{ action('HomeController@categorias', [$category->slug]) }}"> <span>{{ $category->name }}</span> </a><img src="{{ asset($item->img_path) }}"></li>
+				<li><a href="{{ action('HomeController@categorias', [$category->slug]) }}"> <span>{{ $category->name }}</span> </a><img src="{{ asset('/'.$category->img_path) }}"></li>
 			@endforeach
 		</ul>
 	@endif
 	@if ($items)
 		<ul>
 			@foreach ($items as $item)
-				<li><a href="{{ action('HomeController@detalle', [$item->id]) }}"> <span>{{ $item->name }}</span> </a><img src="{{ asset($item->img_path) }}"></li>
+				<li><a href="{{ action('HomeController@detalle', [$item->id]) }}"> <span>{{ $item->name }}</span> </a><img src="{{ asset('/'.$item->img_path) }}"></li>
 			@endforeach
 		</ul>
 	@endif
