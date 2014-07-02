@@ -16,9 +16,9 @@
 			@endif
 				@section('menu')
 				<ul>
-					<li> <a href="./#servicios">SERVICIOS</a></li>
-					<li> <a href="./ofertas">OFERTAS</a></li>
-					<li> <a href="./contacto">CONTACTO</a></li>
+					<li> <a href="{{ action('HomeController@index') }}#servicios">SERVICIOS</a></li>
+					<li> <a href="{{ action('HomeController@ofertas') }}">OFERTAS</a></li>
+					<li> <a href="{{ action('HomeController@contacto') }}">CONTACTO</a></li>
 				</ul>
 				@show
 			</nav>

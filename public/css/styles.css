@@ -25,10 +25,10 @@ nav.menu{
     height: 111px;
 }
 nav.menu ul{
-	position: absolute;
-	top: 25px;
-	left: 685px;
-	width: 280px;
+    position: absolute;
+    top: 25px;
+    left: 685px;
+    width: 280px;
 }
 nav.menu ul li{
     display: inline-block;
@@ -204,6 +204,7 @@ section.encabezado-1 div h1{
     position: absolute;
     left: 95px;
     top: 16px;
+    text-transform: capitalize;
 
 }
 section.encabezado-1 div h4{
