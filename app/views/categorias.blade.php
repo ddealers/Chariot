@@ -17,7 +17,7 @@
 	@if ($categories)
 		<ul>
 			@foreach ($categories as $category)
-				<li><a href="{{ action('HomeController@categorias') }}/{{ $category->slug }}"> <span>{{ $category->name }}</span> </a><img src="{{ asset($item->img_path) }}"></li>
+				<li><a href="{{ action('HomeController@categorias', [$category->slug]) }}"> <span>{{ $category->name }}</span> </a><img src="{{ asset($item->img_path) }}"></li>
 			@endforeach
 		</ul>
 	@endif
