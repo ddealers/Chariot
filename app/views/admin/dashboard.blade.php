@@ -65,7 +65,7 @@
 		</form>
 	</div>
 	<div class="tab-pane fade" id="categorias">
-		<form method="post" class="form-horizontal" role="form" action="{{ action('AdminController@postItem') }}" enctype="multipart/form-data">
+		<form method="post" class="form-horizontal" role="form" action="{{ action('AdminController@postCategory') }}" enctype="multipart/form-data">
 			<div class="form-group">
 				<label class="col-sm-2 control-label">Nombre</label>
 				<div class="col-sm-10">
