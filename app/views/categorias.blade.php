@@ -21,7 +21,11 @@
 			@endforeach
 		</ul>
 	@elseif ($items)
-
+		<ul>
+			@foreach ($items as $item)
+				<li><a href="{{ action('HomeController@detalle') }}/{{ $item->id }}"> <span>{{ $item->name }}</span> </a><img src="{{ $item->img_path }}"></li>
+			@endforeach
+		</ul>
 	@else
 		<p>De momento no hay contenido a mostrar para el criterio seleccionado.</p>
 	@endif
