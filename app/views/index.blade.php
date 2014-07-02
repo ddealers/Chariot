@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 <section class="home">
-	<img src="../assets/logo_chariot.png">
+	<img src="{{ asset('/assets/logo_chariot.png') }}">
 	<p>Somos una empresa responsable, que brinda distintos servicios de manera que disfrutarás tu estancia, "Porque nos gusta que visites nuestra ciudad"</p>
 	<a href="{{ action('HomeController@contacto') }}" class="boton1">RESERVA AHORA</a>
 </section>

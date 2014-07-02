@@ -12,33 +12,39 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('/categorias/{cat?}', 'HomeController@categorias');
-Route::get('/ofertas', 'HomeController@ofertas');
-Route::get('/detalle', 'HomeController@detalle');
-Route::get('/contacto', 'HomeController@contacto');
-Route::get('/login', 'AdminController@login');
-Route::get('/gitupdate', function(){
+Route::get('categorias/{cat?}', 'HomeController@categorias');
+Route::get('ofertas', 'HomeController@ofertas');
+Route::get('detalle', 'HomeController@detalle');
+Route::get('contacto', 'HomeController@contacto');
+/*
+Route::get('/create', function(){
+	$user = new User;
+	$user->email = 'admin@chariot.mx';
+	$user->password = Hash::make('Ch4R107');
+	$user->save(); 
+});
+*/
+Route::get('gitupdate', function(){
 	echo 'Hola git';
 });
-Route::group(array('prefix' => 'admin', 'before' => 'auth'), function(){
-	Route::get('/categorias', function(){
-		echo 'categorias';
+Route::group(array('prefix' => 'admin'), function(){
+	Route::get('/', function(){
+		if(Auth::check()){
+			return Redirect::to('admin/dashboard');
+		}else{
+			return Redirect::to('admin/login');
+		}
 	});
-	Route::get('/ofertas', function(){
-		echo 'ofertas';
-	});
-	Route::get('/detalle', function(){
-		echo 'detalle';
-	});
-	/*
-    Route::get('/', function()
-    {
-        // Has Auth Filter
-    });
-
-    Route::get('user/profile', function()
-    {
-        // Has Auth Filter
-    });
-    */
+	Route::get('login', 'AdminController@login');
+	Route::post('login', 'AdminController@postLogin');
+});
+Route::group(array('prefix' => 'admin', 'before' => 'myAuth'), function(){
+	Route::get('dashboard', 'AdminController@dashboard');
+	Route::post('postItem', 'AdminController@postItem');
+	Route::post('postCategory', 'AdminController@postCategory');
+	Route::post('postOffer', 'AdminController@postOffer');
+	Route::get('logout', 'AdminController@logout');
+});
+Route::filter('myAuth', function(){
+  if (Auth::guest()) return Redirect::to('admin/login');
 });
