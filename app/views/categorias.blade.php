@@ -17,16 +17,18 @@
 	@if ($categories)
 		<ul>
 			@foreach ($categories as $category)
-				<li><a href="{{ action('HomeController@categorias') }}/{{ $category->slug }}"> <span>{{ $category->name }}</span> </a><img src="{{ $category->img_path }}"></li>
+				<li><a href="{{ action('HomeController@categorias') }}/{{ $category->slug }}"> <span>{{ $category->name }}</span> </a><img src="{{ asset($item->img_path) }}"></li>
 			@endforeach
 		</ul>
-	@elseif ($items)
+	@endif
+	@if ($items)
 		<ul>
 			@foreach ($items as $item)
-				<li><a href="{{ action('HomeController@detalle') }}/{{ $item->id }}"> <span>{{ $item->name }}</span> </a><img src="{{ $item->img_path }}"></li>
+				<li><a href="{{ action('HomeController@detalle') }}/{{ $item->id }}"> <span>{{ $item->name }}</span> </a><img src="{{ asset($item->img_path) }}"></li>
 			@endforeach
 		</ul>
-	@else
+	@endif
+	@if(!$categories || !$items)
 		<p>De momento no hay contenido a mostrar para el criterio seleccionado.</p>
 	@endif
 </section>
