@@ -41,7 +41,21 @@ class AdminController extends BaseController {
 		
 	}
 	public function postCategory(){
-
+		$path = 'uploads/';
+		$filename = Input::file('thumbnail')->getClientOriginalName();
+		$success = Input::file('thumbnail')->move($path, $filename);
+		if($success){
+			$item = new Category;
+			$item->parent_id = Input::get('parent');
+			$item->name = Input::get('name');
+			$item->slug = Input::get('slug');
+			$item->description = Input::get('description','');
+			$item->img_path = $path . Input::file('thumbnail')->getClientOriginalName();
+			$item->save();
+			return Redirect::to('admin/dashboard');
+		}else{
+			return 'Error al guardar el item';
+		}
 		return Redirect::to('admin/dashboard');
 	}
 	public function postOffer(){
