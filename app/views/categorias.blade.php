@@ -24,7 +24,7 @@
 	@if ($items)
 		<ul>
 			@foreach ($items as $item)
-				<li><a href="{{ action('HomeController@detalle', ['id' => $item->id]) }}"> <span>{{ $item->name }}</span> </a><img src="{{ asset($item->img_path) }}"></li>
+				<li><a href="{{ action('HomeController@detalle', [$item->id]) }}"> <span>{{ $item->name }}</span> </a><img src="{{ asset($item->img_path) }}"></li>
 			@endforeach
 		</ul>
 	@endif
