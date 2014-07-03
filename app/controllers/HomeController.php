@@ -47,7 +47,9 @@ class HomeController extends BaseController {
 		$this->layout->content = View::make('categorias', array('title' => $title, 'items' => $items, 'categories' => $categories));
 	}
 	public function detalle($id){
+		setlocale(LC_MONETARY, 'es_MX');
 		$item = Profile::find($id);
+		$item->price = money_format('%.2n', $item->price);
 		$this->layout->content = View::make('ficha_tecnica', array('item' => $item));
 	}
 	public function contacto(){
