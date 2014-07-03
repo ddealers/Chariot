@@ -10,7 +10,7 @@
 		<h4>FICHA TÉCNICA</h4>
 	</div>	
 	<div class="imagen">
-		<img src=<"{{$item->img_path}}">
+		<img src=<"{{ asset($item->img_path) }}">
 	</div>
 </section>
 <section class="auto">
@@ -30,11 +30,13 @@
 			<li><img src="{{ asset('assets/servicio.png') }}">SERVICIOS</li>
 			<li><img src="{{ asset('assets/doc.png') }}">DOCUMENTOS</li>
 		</ul>
-	</div>
-	<div class="contenedor">
-		<article>{{ $item->especifications }}</article>
-		<article>{{ $item->services }}</article>
-		<article>{{ $item->documents }}</article>
+		<div class="contenedor">
+			<article>{{ $item->especifications }}</article>
+			<article>{{ $item->services }}</article>
+			<article>{{ $item->documents }}</article>
+		</div>
 	</div>
 </section>
+@stop
+@section('redes')
 @stop
