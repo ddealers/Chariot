@@ -26,16 +26,17 @@
 	<a  href="{{ action('HomeController@contacto') }}" class="boton">RESERVA AHORA</a>
 	<div class="texto">
 		<ul class="informes">
-			<li> <img src="{{ asset('assets/compu.png') }}">ESPECIFICACIONES</li>
+			<li><img src="{{ asset('assets/compu.png') }}">ESPECIFICACIONES</li>
 			<li><img src="{{ asset('assets/servicio.png') }}">SERVICIOS</li>
 			<li><img src="{{ asset('assets/doc.png') }}">DOCUMENTOS</li>
 		</ul>
-		<div class="contenedor">
+		<div class="info-articles">
 			<article>{{ $item->especifications }}</article>
 			<article>{{ $item->services }}</article>
 			<article>{{ $item->documents }}</article>
 		</div>
 	</div>
+	<div class="contenedor"></div>
 </section>
 @stop
 @section('redes')
