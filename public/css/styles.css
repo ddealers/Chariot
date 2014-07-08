@@ -43,7 +43,8 @@ nav.home{
      width: 100%;
 }
 img{
-    padding: 32px;
+    padding: 34px;
+    width: 75%;
 }
 section.home{
     background: url(../assets/fondo_fusion1.png);
