@@ -9,11 +9,11 @@
 		<h1>{{ $title }}</h1>
 		<h4>FICHA TÉCNICA</h4>
 	</div>	
-	<div class="imagen" style="background-image:url({{ asset($img) }}); background-size: cover">
+	<div class="imagen" style="background-image:url({{ urlencode(asset($img)) }}); background-size: cover">
 		<!--img src=<"{{ asset($item->img_path) }}"-->
 	</div>
 </section>
-<section class="auto" style="background-image:url({{ asset($item->img_path) }}); background-size: cover">
+<section class="auto" style="background-image:url({{ urlencode(asset($item->img_path)) }}); background-size: cover">
 	<div>
 		<ul>
 			<li>NOMBRE:<span>{{ $item->name }}</span></li>
