@@ -110,7 +110,7 @@ ul.imagenes li{
     display: inline-block;
     padding-left: 28px;
 }
-ul.imagenes li img{
+ul.imagenes li img.servicio{
     height: 166px;
     padding-top: 20px;
 }
@@ -124,7 +124,7 @@ ul.imagenes li a{
     position: relative
 }
 ul.imagenes li span{
-    width: 162px;
+    width: 164px;
     height: 33px;
     display: inline-block;
     position: absolute;
