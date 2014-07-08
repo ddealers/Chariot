@@ -6,7 +6,7 @@
 @section('content')
 <section class="encabezado">
 	<div class="info">
-		<h1>RENTA DE AUTOS</h1>
+		<h1>{{ $cat_name }}</h1>
 		<h4>FICHA TÉCNICA</h4>
 	</div>	
 	<div class="imagen" style="background-image:url({{ asset($img) }}); background-size: cover">
@@ -18,7 +18,7 @@
 		<ul>
 			<li>NOMBRE:<span>{{ $item->name }}</span></li>
 			<li>PRECIO:<span>{{ $item->price }}</span></li>
-			<li>CATEGORÍA:<span>{{ $item->cat_id }}</span></li>	
+			<li>CATEGORÍA:<span>{{ $cat_name }}</span></li>	
 		</ul>
 	</div>
 </section>

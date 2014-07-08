@@ -50,15 +50,21 @@ class HomeController extends BaseController {
 		setlocale(LC_MONETARY, 'es_MX');
 		$item = Profile::find($id);
 		$category = Category::where('id', '=', $item->cat_id)->first();
+		if($category->parent_id) $parent = Category::where('id', '=', $category->parent_id)->first();
 		$item->price = money_format('%.2n', $item->price);
 		if($category){
-			$title = $category->name;
+			$cat_name = $category->name;
 			$img = $category->img_path;
 		}else{
-			$title = 'Categorías';
+			$cat_name = '';
 			$img = 'assets/2_jetta.jpg';
 		}
-		$this->layout->content = View::make('ficha_tecnica', array('title' => $title, 'img' => $img, 'item' => $item));
+		if($parent){
+			$title = $parent->name;
+		}else {
+			$title = 'Detalle';
+		}
+		$this->layout->content = View::make('ficha_tecnica', array('cat_name' => $cat_name, 'img' => $img, 'item' => $item));
 	}
 	public function contacto(){
 		$this->layout->content = View::make('contacto');
