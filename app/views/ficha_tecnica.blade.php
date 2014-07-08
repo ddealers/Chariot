@@ -31,7 +31,7 @@
 			<li><img src="{{ asset('assets/doc.png') }}">DOCUMENTOS</li>
 		</ul>
 		<div class="contenedor">
-			<article class="contenido">{ $item->especifications }}</article>
+			<article class="contenido">{{ $item->especifications }}</article>
 			<article class="contenido">{{ $item->services }}</article>
 			<article class="contenido">{{ $item->documents }}</article>
 		</div>
