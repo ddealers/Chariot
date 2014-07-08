@@ -256,7 +256,7 @@ section.cuerpo ul li{
     width: 278px;
     height: 316px;
     margin-right: 22px;
-    overflow: auto;
+    overflow: hidden;
     margin-top: 24px;
 }
 section.cuerpo ul li span{
