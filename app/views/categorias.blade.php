@@ -17,7 +17,7 @@
 	@if ($categories)
 		<ul>
 			@foreach ($categories as $category)
-				<li><a href="{{ action('HomeController@categorias', [$category->slug]) }}"> <span>{{ $category->name }}</span> </a><img src="{{ asset($category->img_path) }}" class="claseImg"></li>
+				<li><a href="{{ action('HomeController@categorias', [$category->slug]) }}"> <span class="nomCar">{{ $category->name }}</span> </a><img src="{{ asset($category->img_path) }}" class="claseImg"></li>
 			@endforeach
 		</ul>
 	@endif
