@@ -64,7 +64,7 @@ class HomeController extends BaseController {
 		}else {
 			$title = 'Detalle';
 		}
-		$this->layout->content = View::make('ficha_tecnica', array('cat_name' => $cat_name, 'img' => $img, 'item' => $item));
+		$this->layout->content = View::make('ficha_tecnica', array('title' => $title, 'cat_name' => $cat_name, 'img' => $img, 'item' => $item));
 	}
 	public function contacto(){
 		$this->layout->content = View::make('contacto');
