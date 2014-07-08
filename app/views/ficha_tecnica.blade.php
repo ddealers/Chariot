@@ -9,11 +9,11 @@
 		<h1>RENTA DE AUTOS</h1>
 		<h4>FICHA TÉCNICA</h4>
 	</div>	
-	<div class="imagen">
+	<div class="imagen" style="background-image:url({{ asset($img) }}); background-size: cover">
 		<!--img src=<"{{ asset($item->img_path) }}"-->
 	</div>
 </section>
-<section class="auto">
+<section class="auto" style="background-image:url({{ asset($item->img_path) }}); background-size: cover">
 	<div>
 		<ul>
 			<li>NOMBRE:<span>{{ $item->name }}</span></li>
