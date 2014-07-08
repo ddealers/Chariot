@@ -255,16 +255,18 @@ section.cuerpo ul li{
     width: 278px;
     height: 316px;
     margin-right: 22px;
-    padding-top: 14px;
     overflow: auto;
 }
 section.cuerpo ul li span{
     background-color: #76CDD4;
     border-radius: 0px 0px 15px 15px;
-    padding: 14px 23px;
-    width: 162px;
-    height: 51px;
+    padding: 10px 23px;
+    width: 114px;
+    height: 27px;
     margin: 58px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 section.head{
     display: block;
