@@ -570,6 +570,13 @@ section.icon-contacto span{
     letter-spacing: 1px;
     padding: 4px;
 }
+article.contenido{
+    position: absolute;
+    left: 300px;
+    font-size: 20px;
+    font-family: sans-serif;
+    top: 100px;
+}
 #borde-blanco{
     border: 1px #fff solid;
     padding-bottom: 2px;
