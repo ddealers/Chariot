@@ -6,7 +6,7 @@
 @section('content')
 <section class="encabezado">
 	<div class="info">
-		<h1>{{ $cat_name }}</h1>
+		<h1>{{ $title }}</h1>
 		<h4>FICHA TÉCNICA</h4>
 	</div>	
 	<div class="imagen" style="background-image:url({{ asset($img) }}); background-size: cover">
