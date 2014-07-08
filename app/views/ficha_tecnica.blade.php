@@ -39,4 +39,5 @@
 </section>
 @stop
 @section('redes')
+@parent
 @stop
