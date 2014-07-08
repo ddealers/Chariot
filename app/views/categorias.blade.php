@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('menu')
-<a href="{{ action('HomeController@index') }}"><img src="{{ asset('assets/logo_chariot.png') }}"></a>
+<a href="{{ action('HomeController@index') }}"><img src="{{ asset('assets/logo_chariot.png') }}" class="logoChariot"></a>
 @parent
 @stop
 @section('content')

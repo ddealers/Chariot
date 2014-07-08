@@ -46,6 +46,9 @@ img.muestra{
     padding: 34px;
     width: 75%;
 }
+img.logoChariot{
+    padding: 30px;
+}
 section.home{
     background: url(../assets/fondo_fusion1.png);
     background-repeat: no-repeat;
