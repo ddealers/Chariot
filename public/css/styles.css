@@ -234,9 +234,8 @@ section.encabezado-1 div h4 span{
 section.cuerpo {
     position: relative;
     width: 960px;
-    height: 804px;
     color: #000000;
-    background: url(../assets/fondo.jpg) no-repeat;
+    background: url(../assets/fondo.jpg) no-repeat ;
     overflow: auto;
 }
 section.cuerpo ul{
