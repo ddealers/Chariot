@@ -236,12 +236,11 @@ section.cuerpo {
     width: 960px;
     height: 804px;
     color: #000000;
-    background: url(../assets/fondo.jpg);
+    background: url(../assets/fondo.jpg) no-repeat;
     overflow: auto;
 }
 section.cuerpo ul{
     list-style-type: none;
-    position: absolute;
     top: 85px;
     left: 37px;
     padding: 20px 0px 21px 0px;
