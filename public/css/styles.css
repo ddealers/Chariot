@@ -237,6 +237,7 @@ section.cuerpo {
     height: 804px;
     color: #000000;
     background: url(../assets/fondo.jpg);
+    overflow: auto;
 }
 section.cuerpo ul{
     list-style-type: none;
