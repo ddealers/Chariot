@@ -326,7 +326,7 @@ section.encabezado div.imagen{
     top: -1px;
     right: 0;
     position: relative;
-    background: url(../assets/jetta.png);
+    background: url(../assets/jetta.png) center center;
     margin-left: 455px;
     z-index: 1;
 }
