@@ -244,6 +244,7 @@ section.cuerpo ul{
     position: absolute;
     top: 85px;
     left: 37px;
+    padding: 20px 0px 21px 0px;
 }
 section.cuerpo ul li{
     display: inline-block;
