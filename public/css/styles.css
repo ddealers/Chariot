@@ -49,6 +49,10 @@ img.muestra{
 img.logoChariot{
     padding: 30px;
 }
+img.claseImg{
+    width: 70%;
+    padding: 40px;
+}
 section.home{
     background: url(../assets/fondo_fusion1.png);
     background-repeat: no-repeat;
