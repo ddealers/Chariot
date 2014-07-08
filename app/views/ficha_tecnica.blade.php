@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('menu')
-<a href="{{ action('HomeController@index') }}"><img src="{{ asset('assets/logo_chariot.png') }}"></a>
+<a href="{{ action('HomeController@index') }}"><img src="{{ asset('assets/logo_chariot.png') }}" class="logoChariot"></a>
 @parent
 @stop
 @section('content')
@@ -10,7 +10,7 @@
 		<h4>FICHA TÉCNICA</h4>
 	</div>	
 	<div class="imagen">
-		<img src=<"{{ asset($item->img_path) }}">
+		<!--img src=<"{{ asset($item->img_path) }}"-->
 	</div>
 </section>
 <section class="auto">
@@ -30,14 +30,15 @@
 			<li><img src="{{ asset('assets/servicio.png') }}">SERVICIOS</li>
 			<li><img src="{{ asset('assets/doc.png') }}">DOCUMENTOS</li>
 		</ul>
-		<div class="info-articles">
-			<article>{{ $item->especifications }}</article>
-			<article>{{ $item->services }}</article>
-			<article>{{ $item->documents }}</article>
+		<div class="contenedor">
+			<article class="contenido">{{ $item->especifications }}</article>
+			<article class="contenido">{{ $item->services }}</article>
+			<article class="contenido">{{ $item->documents }}</article>
 		</div>
 	</div>
 	<div class="contenedor"></div>
 </section>
 @stop
 @section('redes')
+@parent
 @stop

@@ -42,8 +42,16 @@ nav.home{
      height: 70px;
      width: 100%;
 }
-img{
-    padding: 32px;
+img.muestra{
+    padding: 34px;
+    width: 75%;
+}
+img.logoChariot{
+    padding: 30px;
+}
+img.claseImg{
+    width: 69%;
+    padding: 41px;
 }
 section.home{
     background: url(../assets/fondo_fusion1.png);
@@ -55,7 +63,8 @@ section.home{
 section.home img{
     position: absolute;
     left: 154px;
-    top: 76px;
+    top: 54px;
+    width: 25%
 } 
 section.home p{
     width: 361px;
@@ -109,15 +118,14 @@ ul.imagenes li{
     display: inline-block;
     padding-left: 28px;
 }
-ul.imagenes li img{
+ul.imagenes li img.servicio{
     height: 166px;
-    padding-top: 20px;
+    padding: 20px 32px;
 }
 ul.imagenes li a{
     display: inline-block;
     font-family: "Alegreya Sans SC";
     font-size: 14px;
-    padding-left: 25px; 
     text-align: center;
     height: 200px;
     position: relative
@@ -130,7 +138,7 @@ ul.imagenes li span{
     margin-bottom: 14px;
     bottom: 0;
     z-index: 1;
-    left: 57px;
+    left: 32px;
     background: #000000;
     opacity: 0.7;
     border-right: 4px #6DC9C4 solid;
@@ -247,15 +255,18 @@ section.cuerpo ul li{
     width: 278px;
     height: 316px;
     margin-right: 22px;
-    padding-top: 14px;
+    overflow: auto;
 }
 section.cuerpo ul li span{
     background-color: #76CDD4;
     border-radius: 0px 0px 15px 15px;
-    padding: 14px 16px;
-    width: 162px;
-    height: 51px;
+    padding: 10px 23px;
+    width: 115px;
+    height: 27px;
     margin: 58px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 section.head{
     display: block;
@@ -384,8 +395,6 @@ section.auto li span{
 section.icon{
     background: #EC5967;
     width: 960px;
-    height: 22px;
-    position: absolute;
 }
 section a.boton{
     color: #FFFFFF;
@@ -416,7 +425,7 @@ section ul.informes li{
     font-size: 21px;
     font-weight: 100;
     color: #ffffff;
-    padding-top: 50px;
+    padding-top: 100px;
     width: 143px;
     margin-left: 32px;
 }
@@ -526,6 +535,7 @@ section.direccion{
 section.direccion img{
     margin-left: 455px;
     margin-top: 12px;
+    width: 50%;
 }
 section.direccion p{
     width: 311px;
@@ -558,12 +568,19 @@ section.icon-contacto li {
 }
 section.icon-contacto li img{  
     float: left;
-    margin: -38px 0px 0px -48px;
+    margin: -10px 25px 32px -25px;
 }
 section.icon-contacto span{
     display: block;
     letter-spacing: 1px;
     padding: 4px;
+}
+article.contenido{
+    position: absolute;
+    left: 300px;
+    font-size: 20px;
+    font-family: sans-serif;
+    top: 700px;
 }
 #borde-blanco{
     border: 1px #fff solid;

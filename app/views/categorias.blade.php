@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('menu')
-<a href="{{ action('HomeController@index') }}"><img src="{{ asset('assets/logo_chariot.png') }}"></a>
+<a href="{{ action('HomeController@index') }}"><img src="{{ asset('assets/logo_chariot.png') }}" class="logoChariot"></a>
 @parent
 @stop
 @section('content')
@@ -10,21 +10,22 @@
 		<!--<h4>AUTO DEL MES <span>JETTA</span></h4>-->
 	</div>	
 	<div class="imagen">
-		<img src=<"{{ asset($img) }}">
+		<!--img src=<"{{ asset($img) }}"-->
 	</div>
 </section>
 <section class="cuerpo">
 	@if ($categories)
 		<ul>
 			@foreach ($categories as $category)
-				<li><a href="{{ action('HomeController@categorias', [$category->slug]) }}"> <span>{{ $category->name }}</span> </a><img src="{{ asset($category->img_path) }}"></li>
+				<li><a href="{{ action('HomeController@categorias', [$category->slug]) }}"> <span>{{ $category->name }}</span> </a><img src="{{ asset($category->img_path) }}" class="claseImg"></li>
 			@endforeach
 		</ul>
 	@endif
 	@if ($items)
 		<ul>
 			@foreach ($items as $item)
-				<li><a href="{{ action('HomeController@detalle', [$item->id]) }}"> <span>{{ $item->name }}</span> </a><img src="{{ asset($item->img_path) }}"></li>
+				<li><a href="{{ action('HomeController@detalle', [$item->id]) }}"> <span>{{ $item->name }}</span> </a><img src="{{ asset($item->img_path) }}"
+					class="muestra"></li>
 			@endforeach
 		</ul>
 	@endif
