@@ -256,6 +256,7 @@ section.cuerpo ul li{
     height: 316px;
     margin-right: 22px;
     overflow: auto;
+    margin-top: 24px;
 }
 section.cuerpo ul li span{
     background-color: #76CDD4;
