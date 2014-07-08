@@ -234,6 +234,7 @@ section.encabezado-1 div h4 span{
 section.cuerpo {
     position: relative;
     width: 960px;
+    min-height: 800px;
     color: #000000;
     background: #000 url(../assets/fondo.jpg) no-repeat ;
     overflow: auto;
