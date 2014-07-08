@@ -13,7 +13,7 @@
 		<img src=<"{{ asset($img) }}">
 	</div>
 </section>
-<section class="cuerpo">
+<section class="cuerpo2">
 	@if ($categories)
 		<ul>
 			@foreach ($categories as $category)
