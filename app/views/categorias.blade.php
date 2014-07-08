@@ -14,6 +14,7 @@
 	</div>
 </section>
 <section class="cuerpo">
+	<p>SUBSECCIONES</p>
 	@if ($categories)
 		<ul>
 			@foreach ($categories as $category)

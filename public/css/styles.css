@@ -234,15 +234,16 @@ section.encabezado-1 div h4 span{
 section.cuerpo {
     position: relative;
     width: 960px;
-    height: 804px;
     color: #000000;
-    background: url(../assets/fondo.jpg);
+    background: #000 url(../assets/fondo.jpg) no-repeat ;
+    overflow: auto;
 }
 section.cuerpo ul{
     list-style-type: none;
-    position: absolute;
     top: 85px;
     left: 37px;
+    padding: 20px 0px 21px 0px;
+    margin-left: 36px;
 }
 section.cuerpo ul li{
     display: inline-block;
@@ -255,7 +256,8 @@ section.cuerpo ul li{
     width: 278px;
     height: 316px;
     margin-right: 22px;
-    overflow: auto;
+    overflow: hidden;
+    margin-top: 24px;
 }
 section.cuerpo ul li span{
     background-color: #76CDD4;
