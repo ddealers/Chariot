@@ -9,7 +9,7 @@
 		<h1>{{ $title }}</h1>
 		<!--<h4>AUTO DEL MES <span>JETTA</span></h4>-->
 	</div>	
-	<div class="imagen">
+	<div class="imagen" style="background-image:url({{ asset($img) }})">
 		<!--img src=<"{{ asset($img) }}"-->
 	</div>
 </section>
