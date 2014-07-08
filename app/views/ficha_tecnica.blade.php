@@ -10,7 +10,7 @@
 		<h4>FICHA TÉCNICA</h4>
 	</div>	
 	<div class="imagen">
-		<img src=<"{{ asset($item->img_path) }}">
+		<!--img src=<"{{ asset($item->img_path) }}"-->
 	</div>
 </section>
 <section class="auto">
