@@ -496,7 +496,7 @@ section.encabezado-1 div.imagen{
     top: 0;
     right: 0;
     position: relative;
-    background: url(../assets/jetta.png);
+    background: url(../assets/jetta.png) center center;
     height: 174px;
 }
 section.encabezado div h1{
