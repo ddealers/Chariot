@@ -531,6 +531,7 @@ section.direccion{
 section.direccion img{
     margin-left: 455px;
     margin-top: 12px;
+    width: 50%;
 }
 section.direccion p{
     width: 311px;
