@@ -10,7 +10,7 @@
 		<!--<h4>AUTO DEL MES <span>JETTA</span></h4>-->
 	</div>	
 	<div class="imagen">
-		<img src=<"{{ asset($img) }}">
+		<!--img src=<"{{ asset($img) }}"-->
 	</div>
 </section>
 <section class="cuerpo">
