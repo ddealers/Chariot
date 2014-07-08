@@ -53,6 +53,9 @@ img.claseImg{
     width: 70%;
     padding: 40px;
 }
+span.nomCar{
+    padding: 14px 59px;
+}
 section.home{
     background: url(../assets/fondo_fusion1.png);
     background-repeat: no-repeat;
