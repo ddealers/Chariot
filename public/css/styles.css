@@ -50,8 +50,8 @@ img.logoChariot{
     padding: 30px;
 }
 img.claseImg{
-    width: 70%;
-    padding: 40px;
+    width: 69%;
+    padding: 41px;
 }
 section.home{
     background: url(../assets/fondo_fusion1.png);
@@ -261,7 +261,7 @@ section.cuerpo ul li span{
     background-color: #76CDD4;
     border-radius: 0px 0px 15px 15px;
     padding: 10px 23px;
-    width: 114px;
+    width: 115px;
     height: 27px;
     margin: 58px;
     display: block;
