@@ -389,7 +389,6 @@ section.auto li span{
 section.icon{
     background: #EC5967;
     width: 960px;
-    position: absolute;
 }
 section a.boton{
     color: #FFFFFF;
@@ -575,7 +574,7 @@ article.contenido{
     left: 300px;
     font-size: 20px;
     font-family: sans-serif;
-    top: 100px;
+    top: 700px;
 }
 #borde-blanco{
     border: 1px #fff solid;
