@@ -412,15 +412,15 @@ section a.boton{
     background-image: -o-linear-gradient(#8A0829, #FF0040);
     text-decoration: none;
     margin-left: 624px;
-
-
+    position: relative;
+    z-index: 2;
 }
 section ul.informes{
     background: #CB2027 top left;
     width: 214px;
     height: 665px;
-    margin-top: 4px;
     list-style-type: none;
+    float: left;
 }
 section ul.informes li{
     text-align: center;
@@ -434,11 +434,13 @@ section ul.informes li{
 }
 div.texto{
     background-color: #fff;
+    overflow: hidden;
 }
 div.contenedor{
     background: #FFF;
-    width: 960px;
+    width: 746px;
     float: left;
+    position: relative;
 }
 div.redline{
     background: #EC5967;
@@ -585,10 +587,10 @@ section.icon-contacto span{
 }
 article.contenido{
     position: absolute;
-    left: 300px;
-    font-size: 20px;
+    left: 10px;
+    font-size: 14px;
     font-family: sans-serif;
-    top: 700px;
+    top: 10px;
 }
 #borde-blanco{
     border: 1px #fff solid;
