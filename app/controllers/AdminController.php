@@ -18,7 +18,7 @@ class AdminController extends BaseController {
 	}
 	public function dashboard(){
 		$categories = Category::all();
-		$items = Item::all();
+		$items = Profile::all();
 		$this->layout->content = View::make('admin.dashboard', array('items' => $items, 'categories' => $categories));		
 	}
 	public function postItem(){
