@@ -44,7 +44,8 @@ class HomeController extends BaseController {
 		$categories = ($category != NULL) ? Category::where('parent_id', '=', $category->id)->get() : NULL;
 		$items = ($category != NULL) ? Profile::where('cat_id', '=', $category->id)->get() : NULL;
 		$title = ($category) ? $category->name : 'Ofertas de Temporada';
-		$this->layout->content = View::make('categorias', array('title' => $title, 'items' => $items, 'categories' => $categories));
+		$img = ($category) ? $category->img_path : 'assets/2_jetta.jpg';
+		$this->layout->content = View::make('categorias', array('title' => $title, 'img' => $img, 'items' => $items, 'categories' => $categories));
 	}
 	public function detalle($id){
 		setlocale(LC_MONETARY, 'es_MX');
