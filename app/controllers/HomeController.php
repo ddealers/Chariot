@@ -51,7 +51,11 @@ class HomeController extends BaseController {
 		setlocale(LC_MONETARY, 'es_MX');
 		$item = Profile::find($id);
 		$category = Category::where('id', '=', $item->cat_id)->first();
-		if($category->parent_id) $parent = Category::where('id', '=', $category->parent_id)->first();
+		if($category->parent_id){
+			$parent = Category::where('id', '=', $category->parent_id)->first();
+		}else{
+			$parent = NULL;
+		}
 		$item->price = money_format('%.2n', $item->price);
 		if($category){
 			$cat_name = $category->name;
