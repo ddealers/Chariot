@@ -108,6 +108,12 @@
 			</div>
 		</form>
 	</div>
-	<div class="tab-pane fade" id="ofertas">...</div>
+	<div class="tab-pane fade" id="ofertas">
+		<ul>
+		@foreach($items as $item)
+		<li><p>{{ $item->name }}</p><img src="{{ $item->img_path }}"></li>
+		@endforeach
+		</ul>
+	</div>
 </div>
 @stop
