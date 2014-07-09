@@ -437,10 +437,11 @@ div.texto{
     overflow: hidden;
 }
 div.contenedor{
-    background: #FFF;
-    width: 746px;
+    width: 726px;
+    height: 645px;
     float: left;
     position: relative;
+    overflow: hidden;
 }
 div.redline{
     background: #EC5967;
