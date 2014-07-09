@@ -588,9 +588,9 @@ section.icon-contacto span{
 article.contenido{
     position: absolute;
     left: 10px;
-    font-size: 14px;
+    font-size: 18px;
     font-family: sans-serif;
-    top: 10px;
+    top: 25px;
 }
 #borde-blanco{
     border: 1px #fff solid;

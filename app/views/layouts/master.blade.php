@@ -6,6 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
 		<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,500' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500' rel='stylesheet' type='text/css'>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="{{ asset('js/main.js') }}"></script>
 	</head>
 	<body>
 		<div class="centrar">
