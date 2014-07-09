@@ -111,7 +111,11 @@
 	<div class="tab-pane fade" id="ofertas">
 		<ul>
 		@foreach($items as $item)
-		<li><p>{{ $item->name }}</p><img src="{{ asset($item->img_path) }}"></li>
+		<li>
+			<p>{{ $item->name }}</p>
+			<img src="{{ asset($item->img_path) }}">
+			<a class="btn btn-primary">Añadir a ofertas</a>
+		</li>
 		@endforeach
 		</ul>
 	</div>
