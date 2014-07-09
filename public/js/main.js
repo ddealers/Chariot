@@ -6,9 +6,13 @@ $(document).on('ready', function(){
 	    }, 500);
 	}
 	$('.menu a').on('click', function() {
-	    $root.animate({
-	        scrollTop: $( $(this).attr('href') ).offset().top
-	    }, 500);
+		var href = $(this).attr('href').split('#');
+		if(href[1]){
+			console.log('#'+href[1]);
+			$root.animate({
+	       		scrollTop: $( '#'+href[1] ).offset().top
+	    	}, 500);
+		}
 	    return false;
 	})
 	$('article.contenido').hide();
