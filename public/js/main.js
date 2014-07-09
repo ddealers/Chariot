@@ -5,9 +5,9 @@ $(document).on('ready', function(){
 	        scrollTop: $( window.location.hash ).offset().top
 	    }, 500);
 	}
-	$('a').click(function() {
+	$('.menu a').on('click', function() {
 	    $root.animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	        scrollTop: $( $(this).attr('href') ).offset().top
 	    }, 500);
 	    return false;
 	})
