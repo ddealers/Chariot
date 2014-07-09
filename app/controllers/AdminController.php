@@ -22,14 +22,14 @@ class AdminController extends BaseController {
 	}
 	public function postItem(){
 		$path = 'uploads/';
-		$filename = Input::file('thumbnail')->getClientOriginalName();
+		$filename = urlencode(Input::file('thumbnail')->getClientOriginalName());
 		$success = Input::file('thumbnail')->move($path, $filename);
 		if($success){
 			$item = new Profile;
 			$item->cat_id = Input::get('category');
 			$item->name = Input::get('name');
 			$item->price = Input::get('price');
-			$item->img_path = $path . Input::file('thumbnail')->getClientOriginalName();
+			$item->img_path = $path . $filename;
 			$item->especifications = Input::get('especifications','');
 			$item->services = Input::get('services','');
 			$item->documents = Input::get('docs','');
@@ -42,7 +42,7 @@ class AdminController extends BaseController {
 	}
 	public function postCategory(){
 		$path = 'uploads/';
-		$filename = Input::file('thumbnail')->getClientOriginalName();
+		$filename = urlencode(Input::file('thumbnail')->getClientOriginalName());
 		$success = Input::file('thumbnail')->move($path, $filename);
 		if($success){
 			$item = new Category;
@@ -50,7 +50,7 @@ class AdminController extends BaseController {
 			$item->name = Input::get('name');
 			$item->slug = Input::get('slug');
 			$item->description = Input::get('description','');
-			$item->img_path = $path . Input::file('thumbnail')->getClientOriginalName();
+			$item->img_path = $path . $filename;
 			$item->save();
 			return Redirect::to('admin/dashboard');
 		}else{
