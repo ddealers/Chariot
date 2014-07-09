@@ -436,6 +436,11 @@ div.texto{
     background-color: #fff;
 }
 div.contenedor{
+    background: #FFF;
+    width: 960px;
+    float: left;
+}
+div.redline{
     background: #EC5967;
     width: 960px;
     height: 22px;

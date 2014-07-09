@@ -36,7 +36,7 @@
 			<article class="contenido">{{ $item->documents }}</article>
 		</div>
 	</div>
-	<div class="contenedor"></div>
+	<div class="redline"></div>
 </section>
 @stop
 @section('redes')
