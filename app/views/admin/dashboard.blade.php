@@ -1,8 +1,3 @@
-<style>
-img.carOfertas{
-	width: 30%;
-}
-</style>
 @extends('layouts.admin')
 @section('content')
 <!-- Nav tabs -->
