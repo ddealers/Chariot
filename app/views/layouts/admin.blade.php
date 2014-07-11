@@ -22,11 +22,11 @@
 			p{
 				margin-top: 20px;
 				font-size: 16px;
-				padding-left: 20px;
 				color: #C52026;
-				padding: 10px;
+				padding: 10px 10px 10px 18px;
 				border: #C52026 solid 1px;
 				border-radius: 3px;
+				text-transform: uppercase;
 			}
 			ul{
 				list-style: none;
