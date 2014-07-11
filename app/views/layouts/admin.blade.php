@@ -16,6 +16,9 @@
 			.form-horizontal .form-group {
 				margin-top: 20px;
 			}
+			.logoChar{
+				width: 15%;
+			}
 		</style>
 	</head>
 	<body>
@@ -24,7 +27,7 @@
 				@if(Auth::check())
 				<a class="navbar-text navbar-right" href="{{ action('AdminController@logout') }}">Salir</a>
 				@endif
-				<img src="{{ asset('assets/logo_chariot.png') }}">
+				<img src="{{ asset('assets/logo_chariot.png') }}" class="logoChar">
 			</nav>
 			@yield('content')
 		</div>
