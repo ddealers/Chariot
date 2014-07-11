@@ -31,9 +31,6 @@
 			ul{
 				list-style: none;
 			}
-			.btn-primary{
-				margin-bottom: 217px;
-			}
 		</style>
 	</head>
 	<body>
