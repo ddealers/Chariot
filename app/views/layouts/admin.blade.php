@@ -11,6 +11,7 @@
 		<style>
 			img{
 				width: 30%;
+				padding: 20;px
 			}
 		</style>
 	</head>
