@@ -17,7 +17,7 @@
 				margin-top: 20px;
 			}
 			.logoChar{
-				width: 15%;
+				width: 20%;
 			}
 		</style>
 	</head>
