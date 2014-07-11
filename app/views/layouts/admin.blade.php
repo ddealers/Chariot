@@ -23,9 +23,10 @@
 				margin-top: 20px;
 				font-size: 16px;
 				padding-left: 20px;
-				background: #657B80;
-				color: #fff;
+				color: #C52026;
 				padding: 10px;
+				border: #C52026 solid 1px;
+				border-radius: 3px;
 			}
 			li{
 				/*background: #9BBDC4;*/
