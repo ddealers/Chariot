@@ -28,6 +28,9 @@
 				border: #C52026 solid 1px;
 				border-radius: 3px;
 			}
+			ul{
+				list-style: none;
+			}
 			li{
 				/*background: #9BBDC4;*/
 			}
