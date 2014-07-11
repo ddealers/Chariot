@@ -8,6 +8,11 @@
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,500' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500' rel='stylesheet' type='text/css'>
+		<style>
+			img{
+				width: 30%;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
