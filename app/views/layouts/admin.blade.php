@@ -31,11 +31,8 @@
 			ul{
 				list-style: none;
 			}
-			li{
-				/*background: #9BBDC4;*/
-			}
-			a.oferta{
-				margin-bottom: 50px;
+			.btn-primary{
+				margin-bottom: 217px;
 			}
 		</style>
 	</head>

@@ -114,7 +114,7 @@
 		<li>
 			<p>{{ $item->name }}</p>
 			<img src="{{ asset($item->img_path) }}" class="carOfertas">
-			<a class="btn btn-primary class="ofertas">Añadir a ofertas</a>
+			<a class="btn btn-primary">Añadir a ofertas</a>
 		</li>
 		@endforeach
 		</ul>
