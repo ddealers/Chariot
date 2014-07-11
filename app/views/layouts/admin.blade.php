@@ -19,6 +19,14 @@
 			.logoChar{
 				width: 20%;
 			}
+			p{
+				margin-top: 20px;
+				font-size: 16px;
+				padding-left: 20px;
+				background: #657B80;
+				color: #fff;
+				padding: 10px;
+			}
 		</style>
 	</head>
 	<body>
