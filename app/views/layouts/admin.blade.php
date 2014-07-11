@@ -34,6 +34,9 @@
 			li{
 				/*background: #9BBDC4;*/
 			}
+			a.oferta{
+				margin-bottom: 50px;
+			}
 		</style>
 	</head>
 	<body>
