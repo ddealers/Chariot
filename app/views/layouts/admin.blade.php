@@ -30,9 +30,6 @@
 			li{
 				/*background: #9BBDC4;*/
 			}
-			a{
-				margin-bottom: 217px;
-			}
 		</style>
 	</head>
 	<body>
