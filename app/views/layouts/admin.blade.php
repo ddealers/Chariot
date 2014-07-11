@@ -11,7 +11,10 @@
 		<style>
 			img{
 				width: 30%;
-				padding: 20;px
+				padding: 20px;
+			}
+			.form-horizontal .form-group {
+				margin-top: 20px;
 			}
 		</style>
 	</head>
