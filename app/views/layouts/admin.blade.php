@@ -8,6 +8,30 @@
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,500' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500' rel='stylesheet' type='text/css'>
+		<style>
+			img{
+				width: 30%;
+				padding: 20px;
+			}
+			.form-horizontal .form-group {
+				margin-top: 20px;
+			}
+			.logoChar{
+				width: 20%;
+			}
+			p{
+				margin-top: 20px;
+				font-size: 16px;
+				color: #C52026;
+				padding: 10px 10px 10px 18px;
+				border: #C52026 solid 1px;
+				border-radius: 3px;
+				text-transform: uppercase;
+			}
+			ul{
+				list-style: none;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -15,7 +39,7 @@
 				@if(Auth::check())
 				<a class="navbar-text navbar-right" href="{{ action('AdminController@logout') }}">Salir</a>
 				@endif
-				<img src="{{ asset('assets/logo_chariot.png') }}">
+				<img src="{{ asset('assets/logo_chariot.png') }}" class="logoChar">
 			</nav>
 			@yield('content')
 		</div>
